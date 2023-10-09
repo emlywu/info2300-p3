@@ -1,0 +1,477 @@
+/* ---------------------------- FONT IMPORTS ------------------------------- */
+@font-face {
+  font-family: "Fredoka One";
+  src: url(../fonts/FredokaOne-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url(../fonts/Overpass-ExtraLightItalic.ttf);
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url(../fonts/Overpass-ExtraLight.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url(../fonts/Overpass-Light.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url(../fonts/Overpass-LightItalic.ttf);
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url(../fonts/Overpass-Regular.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url(../fonts/Overpass-SemiBold.ttf);
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url(../fonts/Overpass-SemiBoldItalic.ttf);
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url(../fonts/Overpass-Black.ttf);
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Overpass";
+  src: url(../fonts/Overpass-ExtraBold.ttf);
+  font-weight: 800;
+}
+/* -------------------------- GENERAL STYLING ------------------------------ */
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Fredoka One";
+}
+
+p {
+  font-family: "Overpass";
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Overpass";
+}
+
+.f-s-btns {
+  padding: 10px;
+}
+
+.btn {
+  background-color: #ff7f11;
+  border-radius: 30px;
+  border: none;
+  padding: 15px;
+  font-weight: 600;
+  font-family: "Overpass";
+}
+
+.btn-sm {
+  background-color: #ff7f11;
+  border-radius: 30px;
+  border: none;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 12px;
+  font-family: "Overpass";
+}
+
+.page:hover {
+  text-decoration: underline;
+  font-weight: 800;
+}
+
+.this:hover {
+  padding: 20px;
+}
+
+.spaced {
+  letter-spacing: 5px;
+}
+
+.hidden {
+  display: none;
+}
+
+strong {
+  font-weight: 800;
+}
+/* ------------------------------ HEADER ---------------------------------- */
+header {
+  background-color: #cbe896;
+  font-family: "Fredoka One";
+  margin: 0px;
+  padding: 0px;
+}
+
+nav {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-name {
+  font-size: 30px;
+  padding-left: 10px;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  list-style-type: none;
+  margin: 0;
+  padding-right: 10px;
+  font-size: 20px;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+}
+
+.stack-item {
+  line-height: 0px;
+}
+.nav-li a {
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  color: black;
+}
+
+.login {
+  background-color: #ff7f11;
+  border-radius: 35px;
+}
+
+.logout {
+  background-color: #ff7f11;
+  border-radius: 35px;
+  padding: 15px;
+}
+
+.logout-link {
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.nav-li {
+  text-decoration: none;
+}
+
+/* ------------------------------ EXPLORE --------------------------------- */
+.home {
+  background: url("/public/images/bg-thin.png") center center no-repeat fixed;
+  /* Source: (original work) Emily Wu */
+  background-position: center;
+  background-size: cover;
+}
+
+.explore {
+  margin: 10px;
+  display: flex;
+}
+
+.filter-search-wrapper {
+  background-color: #fffffc;
+  border: 12px solid #ff1b1c;
+  margin: 10px;
+  border-radius: 30px;
+  padding: 30px;
+  flex-grow: 1;
+  height: 50%;
+  max-width: 250px;
+}
+
+.filter-search-wrapper > form > .filter-form > label {
+  font-family: "Overpass";
+}
+
+.search-input {
+  width: 230px;
+}
+
+.lbl {
+  font-family: "Overpass";
+  font-weight: 600;
+}
+
+.select-elt {
+  width: 200px;
+  padding: 5px;
+  font-family: "Overpass";
+}
+
+.catalog {
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 3;
+  justify-content: center;
+  align-items: center;
+}
+
+.tile {
+  background-color: #fffffc;
+  border: 5px #beb7a4 solid;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 15px;
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.tile-img {
+  max-width: 250px;
+  max-height: 250px;
+}
+
+.get-recipe:hover {
+  font-weight: 800;
+}
+
+.dish-name {
+  text-align: center;
+}
+
+.tag-div {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.tags {
+  background-color: #beb7a4;
+  padding: 10px;
+  margin-top: -10px;
+  font-size: 12px;
+  align-self: flex-start;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.contr-elt {
+  width: 240px;
+  padding: 5px;
+  font-family: "Overpass";
+}
+/* ---------------------------- VIEW RECIPES --------------------------------- */
+.recipe-view {
+  margin-bottom: 20px;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.view-img {
+  max-width: 500px;
+  max-height: 400px;
+}
+
+.view-tags {
+  background-color: #beb7a4;
+  padding: 10px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.view-tag-div {
+  display: flex;
+}
+
+.view-source {
+  text-decoration: underline;
+}
+
+.edit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 15px;
+}
+
+label {
+  font-family: "Overpass";
+}
+
+.edit > .form-item > {
+  font-family: "Overpass";
+}
+
+textarea {
+  font-family: "Overpass";
+}
+
+.space {
+  padding: 15px;
+}
+
+.del-btn {
+  background-color: #cbe896;
+  border-radius: 30px;
+  border: none;
+  padding: 15px;
+  font-weight: 600;
+  font-family: "Overpass";
+}
+
+.deleted-recipe {
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.w-space {
+  margin: 10px;
+}
+
+/* ------------------------------ LOG IN --------------------------------- */
+.login-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-form {
+  padding: 40px 60px 40px 60px;
+  border: 10px solid #ff1b1c;
+  border-radius: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.login-lbl {
+  font-family: "Overpass";
+  padding: 15px;
+}
+/* --------------------------- CONTRIBUTE --------------------------------- */
+.contribute {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("/public/images/bg-thin.png") center center no-repeat fixed;
+  /* Source: (original work) Emily Wu */
+  background-position: center;
+  background-size: cover;
+}
+
+.contribute > .contribute-form > .form-item > label {
+  font-family: "Overpass";
+}
+
+.form-item {
+  margin: 10px;
+}
+
+.contrb {
+  align-self: flex-end;
+  font-weight: 800;
+}
+
+.contribute-form {
+  border: #ff1b1c 5px solid;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  background-color: white;
+}
+
+.fb {
+  color: #ff1b1c;
+  font-weight: 800;
+}
+
+.wide {
+  width: 345px;
+  font-family: "Overpass";
+}
+
+.dish-width {
+  width: 370px;
+  font-family: "Overpass";
+}
+
+.contr-tag {
+  width: 400px;
+  padding: 13px;
+  font-size: 15px;
+  font-family: "Overpass";
+}
+
+.confirmation-wrapper {
+  margin: 20px;
+}
+
+.confirmation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* ------------------------------ ERROR --------------------------------- */
+.error {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 20px;
+}
+/* ------------------------------ FOOTER ---------------------------------- */
+footer {
+  background-color: #beb7a4;
+  padding: 10px;
+}
+
+.footer-info {
+  font-family: "Overpass";
+}
